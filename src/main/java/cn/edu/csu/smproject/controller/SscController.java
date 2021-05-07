@@ -7,7 +7,9 @@ import cn.edu.csu.smproject.domain.DF.*;
 import cn.edu.csu.smproject.domain.DF.Process;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -194,11 +196,18 @@ public class SscController {
         return vg;
     }
 
-    @PostMapping(value = "/countCode")
-    public ArrayList<Code> countCode(String path){
-        path = "G:\\大三下\\软件度量及应用\\实验\\testcode";
+//    @PostMapping(value = "/countCode")
+//    public ArrayList<Code> countCode(String path){
+//        path = "G:\\大三下\\软件度量及应用\\实验\\testcode";
+//        CodeCounterUtil codeCounterUtil = new CodeCounterUtil();
+//        return codeCounterUtil.countCode(path);
+//    }
+
+        @PostMapping(value = "/countCode")
+    public ArrayList<Code> countCode(@RequestBody String file){
+//        path = "G:\\大三下\\软件度量及应用\\实验\\testcode";
         CodeCounterUtil codeCounterUtil = new CodeCounterUtil();
-        return codeCounterUtil.countCode(path);
+        return codeCounterUtil.countCode(file);
     }
 
     @PostMapping(value = "/UCPMetrics", consumes = { MediaType.APPLICATION_XML_VALUE })

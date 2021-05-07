@@ -2,11 +2,7 @@ package cn.edu.csu.smproject.Service;
 
 import cn.edu.csu.smproject.domain.Code;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 /**
@@ -24,26 +20,31 @@ public class CodeCounterUtil {
     /**
      * 代码行数统计
      */
-    public  ArrayList<Code> countCode(String path) {
+    public  ArrayList<Code> countCode(String file) {
+//    public  ArrayList<Code> countCode(String path) {
 //                String file = CodeCounter.class.getResource("/").getFile();
 //                System.out.println("fileName："+file);
 //                String path = file.replace("testcode", "src");
 //                System.out.println("pathName："+path);
+
+//        codes.clear();
+//        System.out.println("path："+path);
+//
+//        ArrayList<File> al = getFile(new File(path));
+//        for (File f : al) {
+//            if (f.getName().matches(".*\\.java$")){ // 匹配java格式的文件
+//                count(f);
+//                System.out.println(f);
+//            }
+//        }
+//        System.out.println("统计文件：" + files);
+//        System.out.println("代码行数：" + codeLines);
+//        System.out.println("注释行数：" + commentLines);
+//        System.out.println("空白行数：" + blankLines);
+//
+//        return codes;
         codes.clear();
-        System.out.println("path："+path);
-
-        ArrayList<File> al = getFile(new File(path));
-        for (File f : al) {
-            if (f.getName().matches(".*\\.java$")){ // 匹配java格式的文件
-                count(f);
-                System.out.println(f);
-            }
-        }
-        System.out.println("统计文件：" + files);
-        System.out.println("代码行数：" + codeLines);
-        System.out.println("注释行数：" + commentLines);
-        System.out.println("空白行数：" + blankLines);
-
+        count(file);
         return codes;
     }
 
@@ -66,17 +67,18 @@ public class CodeCounterUtil {
 
     /**
      * 统计方法
-     * @param f
+     * @param str
      */
-    private  void count(File f) {
+    private  void count(String str) {
         //设置一个code
         Code code = new Code();
-        code.setFileName(f.getName());
+        code.setFileName("quicksort.java");
 
         BufferedReader br = null;
         boolean flag = false;
         try {
-            br = new BufferedReader(new FileReader(f));
+//            br = new BufferedReader(new FileReader(f));
+            br = new BufferedReader(new StringReader(str));
             String line = "";
             while ((line = br.readLine()) != null) {
                 line = line.trim(); // 除去注释前的空格
