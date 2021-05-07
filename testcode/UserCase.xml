@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_kkgsMBeLEd60N8ipLbB6nA" name="COS_Cafeteria_Ordering_System">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_pUr7kK8ZEeunk8LtkYLusQ" name="员工"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_pVLDwK8ZEeunk8LtkYLusQ" name="顾客">
+    <generalization xmi:id="_pVSYgK8ZEeunk8LtkYLusQ" general="_pUr7kK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_pVcJgK8ZEeunk8LtkYLusQ" name="餐厅员工">
+    <generalization xmi:id="_pVi3MK8ZEeunk8LtkYLusQ" general="_pVLDwK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_pVraEK8ZEeunk8LtkYLusQ" name="菜单管理员">
+    <generalization xmi:id="_pVyHwK8ZEeunk8LtkYLusQ" general="_pVcJgK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_pV8f0K8ZEeunk8LtkYLusQ" name="送餐员">
+    <generalization xmi:id="_pWCmcK8ZEeunk8LtkYLusQ" general="_pVcJgK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_pWMXcK8ZEeunk8LtkYLusQ" name="工资系统"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_pZrJQK8ZEeunk8LtkYLusQ" name="Dependency_2" supplier="_pe6OkK8ZEeunk8LtkYLusQ" client="_pcS_cK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_pZzFEK8ZEeunk8LtkYLusQ" name="Dependency_3" supplier="_pdIs8K8ZEeunk8LtkYLusQ" client="_pdkx0K8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_pZ39kK8ZEeunk8LtkYLusQ" name="Dependency_4" supplier="_pfHp8K8ZEeunk8LtkYLusQ" client="_pcFkEK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_pZ9dIK8ZEeunk8LtkYLusQ" name="Dependency_5" supplier="_pfHp8K8ZEeunk8LtkYLusQ" client="_pctPIK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_paAgcK8ZEeunk8LtkYLusQ" name="Dependency_6" supplier="_pfHp8K8ZEeunk8LtkYLusQ" client="_pcga0K8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_paDjwK8ZEeunk8LtkYLusQ" name="Dependency_7" supplier="_pefX0K8ZEeunk8LtkYLusQ" client="_peszMK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_paIcQK8ZEeunk8LtkYLusQ" name="Dependency_8" supplier="_pfHp8K8ZEeunk8LtkYLusQ" client="_pc7RkK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_paLfkK8ZEeunk8LtkYLusQ" name="Dependency_9" supplier="_pfHp8K8ZEeunk8LtkYLusQ" client="_pdIs8K8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_paMtsK8ZEeunk8LtkYLusQ" name="Dependency_10" supplier="_pfHp8K8ZEeunk8LtkYLusQ" client="_pdWIUK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_paQ_IK8ZEeunk8LtkYLusQ" name="Dependency_11" supplier="_pfHp8K8ZEeunk8LtkYLusQ" client="_pdyNMK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_paUCcK8ZEeunk8LtkYLusQ" name="Dependency_12" supplier="_pfHp8K8ZEeunk8LtkYLusQ" client="_peA2sK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_paXs0K8ZEeunk8LtkYLusQ" name="Dependency_13" supplier="_pfHp8K8ZEeunk8LtkYLusQ" client="_pefX0K8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_paY68K8ZEeunk8LtkYLusQ" name="Dependency_14" supplier="_pfHp8K8ZEeunk8LtkYLusQ" client="_peO5IK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pbFegK8ZEeunk8LtkYLusQ" name="查看菜单"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pbrUYK8ZEeunk8LtkYLusQ" name="查看今日特价"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pb5W0K8ZEeunk8LtkYLusQ" name="注册"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pcFkEK8ZEeunk8LtkYLusQ" name="在线订餐" clientDependency="_pZ39kK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pcS_cK8ZEeunk8LtkYLusQ" name="注册工资支付" clientDependency="_pZrJQK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pcga0K8ZEeunk8LtkYLusQ" name="修改订餐信息" clientDependency="_paAgcK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pctPIK8ZEeunk8LtkYLusQ" name="删除订餐信息" clientDependency="_pZ9dIK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pc7RkK8ZEeunk8LtkYLusQ" name="备餐" clientDependency="_paIcQK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pdIs8K8ZEeunk8LtkYLusQ" name="生成付费请求" clientDependency="_paLfkK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pdWIUK8ZEeunk8LtkYLusQ" name="请求送餐" clientDependency="_paMtsK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pdkx0K8ZEeunk8LtkYLusQ" name="请求发送给工资系统" clientDependency="_pZzFEK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pdyNMK8ZEeunk8LtkYLusQ" name="管理菜单" clientDependency="_paQ_IK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_peA2sK8ZEeunk8LtkYLusQ" name="打印送餐说明" clientDependency="_paUCcK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_peO5IK8ZEeunk8LtkYLusQ" name="记录送餐信息" clientDependency="_paY68K8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pefX0K8ZEeunk8LtkYLusQ" name="记录收费" clientDependency="_paXs0K8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_peszMK8ZEeunk8LtkYLusQ" name="收取现金" clientDependency="_paDjwK8ZEeunk8LtkYLusQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pe6OkK8ZEeunk8LtkYLusQ" name="身份验证"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pfHp8K8ZEeunk8LtkYLusQ" name="登录"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pf9-gK8ZEeunk8LtkYLusQ" name="Association_1" memberEnd="_pf-lkK8ZEeunk8LtkYLusQ _pgEsMK8ZEeunk8LtkYLusQ" navigableOwnedEnd="_pf-lkK8ZEeunk8LtkYLusQ _pgEsMK8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_pf-lkK8ZEeunk8LtkYLusQ" name="src" type="_pUr7kK8ZEeunk8LtkYLusQ" association="_pf9-gK8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_pgEsMK8ZEeunk8LtkYLusQ" name="dst" type="_pbFegK8ZEeunk8LtkYLusQ" association="_pf9-gK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pgIWkK8ZEeunk8LtkYLusQ" name="Association_2" memberEnd="_pgI9oK8ZEeunk8LtkYLusQ _pgN2IK8ZEeunk8LtkYLusQ" navigableOwnedEnd="_pgI9oK8ZEeunk8LtkYLusQ _pgN2IK8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_pgI9oK8ZEeunk8LtkYLusQ" name="src" type="_pUr7kK8ZEeunk8LtkYLusQ" association="_pgIWkK8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_pgN2IK8ZEeunk8LtkYLusQ" name="dst" type="_pbrUYK8ZEeunk8LtkYLusQ" association="_pgIWkK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pgQ5cK8ZEeunk8LtkYLusQ" name="Association_3" memberEnd="_pgQ5ca8ZEeunk8LtkYLusQ _pgVx8K8ZEeunk8LtkYLusQ" navigableOwnedEnd="_pgQ5ca8ZEeunk8LtkYLusQ _pgVx8K8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_pgQ5ca8ZEeunk8LtkYLusQ" name="src" type="_pUr7kK8ZEeunk8LtkYLusQ" association="_pgQ5cK8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_pgVx8K8ZEeunk8LtkYLusQ" name="dst" type="_pb5W0K8ZEeunk8LtkYLusQ" association="_pgQ5cK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pgXnIK8ZEeunk8LtkYLusQ" name="Association_4" memberEnd="_pgYOMK8ZEeunk8LtkYLusQ _pgdtwK8ZEeunk8LtkYLusQ" navigableOwnedEnd="_pgYOMK8ZEeunk8LtkYLusQ _pgdtwK8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_pgYOMK8ZEeunk8LtkYLusQ" name="src" type="_pVLDwK8ZEeunk8LtkYLusQ" association="_pgXnIK8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_pgdtwK8ZEeunk8LtkYLusQ" name="dst" type="_pcFkEK8ZEeunk8LtkYLusQ" association="_pgXnIK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pgfi8K8ZEeunk8LtkYLusQ" name="Association_5" memberEnd="_pggKAK8ZEeunk8LtkYLusQ _pglpkK8ZEeunk8LtkYLusQ" navigableOwnedEnd="_pggKAK8ZEeunk8LtkYLusQ _pglpkK8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_pggKAK8ZEeunk8LtkYLusQ" name="src" type="_pVLDwK8ZEeunk8LtkYLusQ" association="_pgfi8K8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_pglpkK8ZEeunk8LtkYLusQ" name="dst" type="_pcS_cK8ZEeunk8LtkYLusQ" association="_pgfi8K8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pgos4K8ZEeunk8LtkYLusQ" name="Association_6" memberEnd="_pgpT8K8ZEeunk8LtkYLusQ _pgvakK8ZEeunk8LtkYLusQ" navigableOwnedEnd="_pgpT8K8ZEeunk8LtkYLusQ _pgvakK8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_pgpT8K8ZEeunk8LtkYLusQ" name="src" type="_pVLDwK8ZEeunk8LtkYLusQ" association="_pgos4K8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_pgvakK8ZEeunk8LtkYLusQ" name="dst" type="_pcga0K8ZEeunk8LtkYLusQ" association="_pgos4K8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pgwosK8ZEeunk8LtkYLusQ" name="Association_7" memberEnd="_pgxPwK8ZEeunk8LtkYLusQ _pg1hMK8ZEeunk8LtkYLusQ" navigableOwnedEnd="_pgxPwK8ZEeunk8LtkYLusQ _pg1hMK8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_pgxPwK8ZEeunk8LtkYLusQ" name="src" type="_pVLDwK8ZEeunk8LtkYLusQ" association="_pgwosK8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_pg1hMK8ZEeunk8LtkYLusQ" name="dst" type="_pctPIK8ZEeunk8LtkYLusQ" association="_pgwosK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pg5LkK8ZEeunk8LtkYLusQ" name="Association_8" memberEnd="_pg5Lka8ZEeunk8LtkYLusQ _pg-EEK8ZEeunk8LtkYLusQ" navigableOwnedEnd="_pg5Lka8ZEeunk8LtkYLusQ _pg-EEK8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_pg5Lka8ZEeunk8LtkYLusQ" name="src" type="_pe6OkK8ZEeunk8LtkYLusQ" association="_pg5LkK8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_pg-EEK8ZEeunk8LtkYLusQ" name="dst" type="_pWMXcK8ZEeunk8LtkYLusQ" association="_pg5LkK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_phAgUK8ZEeunk8LtkYLusQ" name="Association_9" memberEnd="_phAgUa8ZEeunk8LtkYLusQ _phF_4K8ZEeunk8LtkYLusQ" navigableOwnedEnd="_phAgUa8ZEeunk8LtkYLusQ _phF_4K8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_phAgUa8ZEeunk8LtkYLusQ" name="src" type="_pVcJgK8ZEeunk8LtkYLusQ" association="_phAgUK8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_phF_4K8ZEeunk8LtkYLusQ" name="dst" type="_pc7RkK8ZEeunk8LtkYLusQ" association="_phAgUK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_phJDMK8ZEeunk8LtkYLusQ" name="Association_10" memberEnd="_phJqQK8ZEeunk8LtkYLusQ _phPJ0K8ZEeunk8LtkYLusQ" navigableOwnedEnd="_phJqQK8ZEeunk8LtkYLusQ _phPJ0K8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_phJqQK8ZEeunk8LtkYLusQ" name="src" type="_pVcJgK8ZEeunk8LtkYLusQ" association="_phJDMK8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_phPJ0K8ZEeunk8LtkYLusQ" name="dst" type="_pdIs8K8ZEeunk8LtkYLusQ" association="_phJDMK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_phRmEK8ZEeunk8LtkYLusQ" name="Association_11" memberEnd="_phSNIK8ZEeunk8LtkYLusQ _phXFoK8ZEeunk8LtkYLusQ" navigableOwnedEnd="_phSNIK8ZEeunk8LtkYLusQ _phXFoK8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_phSNIK8ZEeunk8LtkYLusQ" name="src" type="_pVcJgK8ZEeunk8LtkYLusQ" association="_phRmEK8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_phXFoK8ZEeunk8LtkYLusQ" name="dst" type="_pdWIUK8ZEeunk8LtkYLusQ" association="_phRmEK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_phY60K8ZEeunk8LtkYLusQ" name="Association_12" memberEnd="_phZh4K8ZEeunk8LtkYLusQ _phfogK8ZEeunk8LtkYLusQ" navigableOwnedEnd="_phZh4K8ZEeunk8LtkYLusQ _phfogK8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_phZh4K8ZEeunk8LtkYLusQ" name="src" type="_pVraEK8ZEeunk8LtkYLusQ" association="_phY60K8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_phfogK8ZEeunk8LtkYLusQ" name="dst" type="_pdyNMK8ZEeunk8LtkYLusQ" association="_phY60K8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_phiEwK8ZEeunk8LtkYLusQ" name="Association_13" memberEnd="_phjS4K8ZEeunk8LtkYLusQ _phoLYK8ZEeunk8LtkYLusQ" navigableOwnedEnd="_phjS4K8ZEeunk8LtkYLusQ _phoLYK8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_phjS4K8ZEeunk8LtkYLusQ" name="src" type="_pV8f0K8ZEeunk8LtkYLusQ" association="_phiEwK8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_phoLYK8ZEeunk8LtkYLusQ" name="dst" type="_peA2sK8ZEeunk8LtkYLusQ" association="_phiEwK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_phsc0K8ZEeunk8LtkYLusQ" name="Association_14" memberEnd="_phtD4K8ZEeunk8LtkYLusQ _phx8YK8ZEeunk8LtkYLusQ" navigableOwnedEnd="_phtD4K8ZEeunk8LtkYLusQ _phx8YK8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_phtD4K8ZEeunk8LtkYLusQ" name="src" type="_pV8f0K8ZEeunk8LtkYLusQ" association="_phsc0K8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_phx8YK8ZEeunk8LtkYLusQ" name="dst" type="_pefX0K8ZEeunk8LtkYLusQ" association="_phsc0K8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ph0_sK8ZEeunk8LtkYLusQ" name="Association_15" memberEnd="_ph0_sa8ZEeunk8LtkYLusQ _ph7tYK8ZEeunk8LtkYLusQ" navigableOwnedEnd="_ph0_sa8ZEeunk8LtkYLusQ _ph7tYK8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_ph0_sa8ZEeunk8LtkYLusQ" name="src" type="_pV8f0K8ZEeunk8LtkYLusQ" association="_ph0_sK8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_ph7tYK8ZEeunk8LtkYLusQ" name="dst" type="_peO5IK8ZEeunk8LtkYLusQ" association="_ph0_sK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ph9ikK8ZEeunk8LtkYLusQ" name="Association_16" memberEnd="_ph-JoK8ZEeunk8LtkYLusQ _piFeYK8ZEeunk8LtkYLusQ" navigableOwnedEnd="_ph-JoK8ZEeunk8LtkYLusQ _piFeYK8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_ph-JoK8ZEeunk8LtkYLusQ" name="src" type="_pdkx0K8ZEeunk8LtkYLusQ" association="_ph9ikK8ZEeunk8LtkYLusQ"/>
+    <ownedEnd xmi:id="_piFeYK8ZEeunk8LtkYLusQ" name="dst" type="_pWMXcK8ZEeunk8LtkYLusQ" association="_ph9ikK8ZEeunk8LtkYLusQ"/>
+  </packagedElement>
+</uml:Model>

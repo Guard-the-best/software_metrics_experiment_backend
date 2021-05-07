@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_kkgsMBeLEd60N8ipLbB6nA" name="02_Component_FPSBlindage">
+  <packagedElement xmi:type="uml:Association" xmi:id="_Qd5BIK8ZEeunk8LtkYLusQ" name="association1" memberEnd="_QeNxQK8ZEeunk8LtkYLusQ _QgSN0K8ZEeunk8LtkYLusQ" navigableOwnedEnd="_QgSN0K8ZEeunk8LtkYLusQ">
+    <ownedEnd xmi:id="_QeNxQK8ZEeunk8LtkYLusQ" name="" visibility="public" type="_QlO_QK8ZEeunk8LtkYLusQ" association="_Qd5BIK8ZEeunk8LtkYLusQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QgH1wK8ZEeunk8LtkYLusQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QgDkUK8ZEeunk8LtkYLusQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_QgSN0K8ZEeunk8LtkYLusQ" name="" visibility="public" type="_Qhz30K8ZEeunk8LtkYLusQ" aggregation="shared" association="_Qd5BIK8ZEeunk8LtkYLusQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QggQQa8ZEeunk8LtkYLusQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QggQQK8ZEeunk8LtkYLusQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Qhz30K8ZEeunk8LtkYLusQ" name="Shape" isAbstract="true">
+    <ownedOperation xmi:id="_QkNrkK8ZEeunk8LtkYLusQ" name="fillColor" visibility="public" isAbstract="true" bodyCondition="_QkYqsK8ZEeunk8LtkYLusQ">
+      <ownedRule xmi:id="_QkYqsK8ZEeunk8LtkYLusQ">
+        <specification xmi:type="uml:LiteralString" xmi:id="_QkcVEK8ZEeunk8LtkYLusQ" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_Qk1WoK8ZEeunk8LtkYLusQ" name="color" type="_Qk_usK8ZEeunk8LtkYLusQ"/>
+      <ownedParameter xmi:id="_QlEAIK8ZEeunk8LtkYLusQ" name="fillColor" type="_QlFOQK8ZEeunk8LtkYLusQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Qk_usK8ZEeunk8LtkYLusQ" name="String"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_QlFOQK8ZEeunk8LtkYLusQ" name="void"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QlO_QK8ZEeunk8LtkYLusQ" name="Composition">
+    <generalization xmi:id="_QlZXUK8ZEeunk8LtkYLusQ" general="_Qhz30K8ZEeunk8LtkYLusQ"/>
+    <ownedAttribute xmi:id="_QlmysK8ZEeunk8LtkYLusQ" name="shapes" visibility="private" type="_Qhz30K8ZEeunk8LtkYLusQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qlp2AK8ZEeunk8LtkYLusQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QlqdEK8ZEeunk8LtkYLusQ"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_QmGh8K8ZEeunk8LtkYLusQ" name="addShape" visibility="public" bodyCondition="_QmLacK8ZEeunk8LtkYLusQ">
+      <ownedRule xmi:id="_QmLacK8ZEeunk8LtkYLusQ">
+        <specification xmi:type="uml:LiteralString" xmi:id="_QmLaca8ZEeunk8LtkYLusQ" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_QmQS8K8ZEeunk8LtkYLusQ" name="shape" type="_Qhz30K8ZEeunk8LtkYLusQ"/>
+      <ownedParameter xmi:id="_QmWZkK8ZEeunk8LtkYLusQ" name="addShape" type="_QlFOQK8ZEeunk8LtkYLusQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_QmYOwK8ZEeunk8LtkYLusQ" name="delShape" visibility="public" bodyCondition="_QmcgMK8ZEeunk8LtkYLusQ">
+      <ownedRule xmi:id="_QmcgMK8ZEeunk8LtkYLusQ">
+        <specification xmi:type="uml:LiteralString" xmi:id="_QmdHQK8ZEeunk8LtkYLusQ" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_Qmh_wK8ZEeunk8LtkYLusQ" name="shape" type="_Qhz30K8ZEeunk8LtkYLusQ"/>
+      <ownedParameter xmi:id="_QmlqIK8ZEeunk8LtkYLusQ" name="delShape" type="_QlFOQK8ZEeunk8LtkYLusQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_QmoGYK8ZEeunk8LtkYLusQ" name="fillColor" visibility="public" bodyCondition="_QmqioK8ZEeunk8LtkYLusQ">
+      <ownedRule xmi:id="_QmqioK8ZEeunk8LtkYLusQ">
+        <specification xmi:type="uml:LiteralString" xmi:id="_Qmqioa8ZEeunk8LtkYLusQ" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_QmvbIK8ZEeunk8LtkYLusQ" name="color" type="_Qk_usK8ZEeunk8LtkYLusQ"/>
+      <ownedParameter xmi:id="_QmyecK8ZEeunk8LtkYLusQ" name="fillColor" type="_QlFOQK8ZEeunk8LtkYLusQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Qm7BUK8ZEeunk8LtkYLusQ" name="Cylinder">
+    <generalization xmi:id="_QnC9IK8ZEeunk8LtkYLusQ" general="_Qhz30K8ZEeunk8LtkYLusQ"/>
+    <ownedOperation xmi:id="_Qnb-sK8ZEeunk8LtkYLusQ" name="fillColor" visibility="public" bodyCondition="_Qndz4K8ZEeunk8LtkYLusQ">
+      <ownedRule xmi:id="_Qndz4K8ZEeunk8LtkYLusQ">
+        <specification xmi:type="uml:LiteralString" xmi:id="_Qnea8K8ZEeunk8LtkYLusQ" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_QnjTcK8ZEeunk8LtkYLusQ" name="color" type="_Qk_usK8ZEeunk8LtkYLusQ"/>
+      <ownedParameter xmi:id="_Qnm90K8ZEeunk8LtkYLusQ" name="fillColor" type="_QlFOQK8ZEeunk8LtkYLusQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Qnx88K8ZEeunk8LtkYLusQ" name="Cube">
+    <generalization xmi:id="_Qn54wK8ZEeunk8LtkYLusQ" general="_Qhz30K8ZEeunk8LtkYLusQ"/>
+    <ownedOperation xmi:id="_QoSTQK8ZEeunk8LtkYLusQ" name="fillColor" visibility="public" bodyCondition="_QoUIcK8ZEeunk8LtkYLusQ">
+      <ownedRule xmi:id="_QoUIcK8ZEeunk8LtkYLusQ">
+        <specification xmi:type="uml:LiteralString" xmi:id="_QoUvgK8ZEeunk8LtkYLusQ" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_QoZoAK8ZEeunk8LtkYLusQ" name="color" type="_Qk_usK8ZEeunk8LtkYLusQ"/>
+      <ownedParameter xmi:id="_QocEQK8ZEeunk8LtkYLusQ" name="fillColor" type="_QlFOQK8ZEeunk8LtkYLusQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QomcUK8ZEeunk8LtkYLusQ" name="Pyramid">
+    <generalization xmi:id="_Qou_MK8ZEeunk8LtkYLusQ" general="_Qhz30K8ZEeunk8LtkYLusQ"/>
+    <ownedOperation xmi:id="_QpM5QK8ZEeunk8LtkYLusQ" name="fillColor" visibility="public" bodyCondition="_QpPVgK8ZEeunk8LtkYLusQ">
+      <ownedRule xmi:id="_QpPVgK8ZEeunk8LtkYLusQ">
+        <specification xmi:type="uml:LiteralString" xmi:id="_QpPVga8ZEeunk8LtkYLusQ" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_QpU1EK8ZEeunk8LtkYLusQ" name="color" type="_Qk_usK8ZEeunk8LtkYLusQ"/>
+      <ownedParameter xmi:id="_QpX4YK8ZEeunk8LtkYLusQ" name="fillColor" type="_QlFOQK8ZEeunk8LtkYLusQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+</uml:Model>
